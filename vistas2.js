@@ -9,15 +9,10 @@ app.set('views',__dirname + '/views');
 
 app.use(express.static(__dirname + "/public")) 
 
-app.get('/',(peticion,respuesta)=>{
-    respuesta.render("index",{titulo:"mi titulo dinamico"})
-})
+//llamado a las rutas
+app.use('/',require('./router/rutasweb'));
 
-app.get('/servicios',(peticion,respuesta)=>{    
-    respuesta.render("servicios",{tituloser: "mi titulo dinamico de servicios",
-                                  trabajos:"reparaciones-adaptaciones"  
-    })
-})
+app.use('/mascotas',require('./router/mascotas'))
 
 
 app.use((peticion,respuesta,next)=>{

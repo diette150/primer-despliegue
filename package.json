@@ -8,7 +8,8 @@
   "main": "vistas2.js",
   "devDependencies": {},
   "scripts": {
-    "start": "node vistas2.js" 
+    "start": "node vistas2.js", 
+    "dev": "nodemon vistas2.js"
   },
   "keywords": [],
   "author": "",
