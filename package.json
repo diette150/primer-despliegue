@@ -1,14 +1,15 @@
 {
   "dependencies": {
+    "dotenv": "^16.5.0",
     "ejs": "^3.1.10",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1"
   },
   "name": "cap10",
   "version": "1.0.0",
   "main": "vistas2.js",
-  "devDependencies": {},
   "scripts": {
-    "start": "node vistas2.js", 
+    "start": "node vistas2.js",
     "dev": "nodemon vistas2.js"
   },
   "keywords": [],
